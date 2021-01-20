@@ -7,12 +7,14 @@ module.exports = {
     'prettier',
     'prettier/react',
     'prettier/@typescript-eslint',
+    'eslint:recommended',
     'plugin:prettier/recommended',
   ],
   plugins: ['react', '@typescript-eslint', 'jest'],
   env: {
     browser: true,
     es6: true,
+    node: true,
     jest: true,
   },
   globals: {
@@ -28,6 +30,7 @@ module.exports = {
     sourceType: 'module',
     project: './tsconfig.json',
   },
+  ignorePatterns: ['.eslintrc.js'], // !!! new and important part !!!
   rules: {
     'linebreak-style': 'off',
     'prettier/prettier': [
@@ -37,5 +40,11 @@ module.exports = {
       },
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'spaced-comment': [1, 'always'],
+    'no-unused-vars': 0,
+    'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
+    'import/prefer-default-export': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
   },
 }
