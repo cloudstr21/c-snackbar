@@ -1,6 +1,6 @@
 {
-  "name": "ui-components",
-  "version": "0.1.0",
+  "name": "c-snackbar",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
